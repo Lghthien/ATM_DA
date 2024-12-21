@@ -220,6 +220,13 @@ namespace RSA
             return a;
         }
 
+        private void BackMenu_Click(object sender, EventArgs e)
+        {
+            Menu menu = new Menu();
+            menu.Show();
+            this.Close();
+        }
+
         private BigInteger ModInverse(BigInteger a, BigInteger m)
         {
             BigInteger m0 = m, t, q;

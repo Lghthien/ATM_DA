@@ -20,9 +20,18 @@ namespace RSA
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void RSAForm_Click(object sender, EventArgs e)
         {
+            RSA RSA = new RSA();
+            RSA.Show();
+            this.Hide();
+        }
 
+        private void PlayFairForm_Click(object sender, EventArgs e)
+        {
+            PlayFair playFair = new PlayFair();
+            playFair.Show();
+            this.Hide();
         }
     }
 }

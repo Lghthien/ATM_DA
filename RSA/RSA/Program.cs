@@ -16,7 +16,7 @@ namespace RSA
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new RSA());
+            Application.Run(new Menu());
         }
     }
 }

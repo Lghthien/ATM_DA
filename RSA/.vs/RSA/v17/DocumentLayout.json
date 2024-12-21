@@ -3,15 +3,39 @@
   "WorkspaceRootPath": "L:\\N\u0103m 3\\K\u1EF3 5\\web\\ATM_DA\\RSA\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{2738EC94-6927-4BA9-883F-30C8A4D509F9}|RSA\\Menu.csproj|l:\\n\u0103m 3\\k\u1EF3 5\\web\\atm_da\\rsa\\rsa\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2738EC94-6927-4BA9-883F-30C8A4D509F9}|RSA\\Menu.csproj|solutionrelative:rsa\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2738EC94-6927-4BA9-883F-30C8A4D509F9}|RSA\\Menu.csproj|l:\\n\u0103m 3\\k\u1EF3 5\\web\\atm_da\\rsa\\rsa\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2738EC94-6927-4BA9-883F-30C8A4D509F9}|RSA\\Menu.csproj|solutionrelative:rsa\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2738EC94-6927-4BA9-883F-30C8A4D509F9}|RSA\\Menu.csproj|l:\\n\u0103m 3\\k\u1EF3 5\\web\\atm_da\\rsa\\rsa\\playfair.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2738EC94-6927-4BA9-883F-30C8A4D509F9}|RSA\\Menu.csproj|solutionrelative:rsa\\playfair.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2738EC94-6927-4BA9-883F-30C8A4D509F9}|RSA\\Menu.csproj|l:\\n\u0103m 3\\k\u1EF3 5\\web\\atm_da\\rsa\\rsa\\playfair.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2738EC94-6927-4BA9-883F-30C8A4D509F9}|RSA\\Menu.csproj|solutionrelative:rsa\\playfair.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2738EC94-6927-4BA9-883F-30C8A4D509F9}|RSA\\Menu.csproj|l:\\n\u0103m 3\\k\u1EF3 5\\web\\atm_da\\rsa\\rsa\\menu.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2738EC94-6927-4BA9-883F-30C8A4D509F9}|RSA\\Menu.csproj|solutionrelative:rsa\\menu.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{2738EC94-6927-4BA9-883F-30C8A4D509F9}|RSA\\Menu.csproj|l:\\n\u0103m 3\\k\u1EF3 5\\web\\atm_da\\rsa\\rsa\\rsa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2738EC94-6927-4BA9-883F-30C8A4D509F9}|RSA\\Menu.csproj|solutionrelative:rsa\\rsa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2738EC94-6927-4BA9-883F-30C8A4D509F9}|RSA\\Menu.csproj|l:\\n\u0103m 3\\k\u1EF3 5\\web\\atm_da\\rsa\\rsa\\rsa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{2738EC94-6927-4BA9-883F-30C8A4D509F9}|RSA\\Menu.csproj|L:\\N\u0103m 3\\K\u1EF3 5\\web\\ATM_DA\\RSA\\rsa\\rsa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{2738EC94-6927-4BA9-883F-30C8A4D509F9}|RSA\\Menu.csproj|solutionrelative:rsa\\rsa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2738EC94-6927-4BA9-883F-30C8A4D509F9}|RSA\\RSA.csproj|l:\\n\u0103m 3\\k\u1EF3 5\\web\\atm_da\\rsa\\rsa\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2738EC94-6927-4BA9-883F-30C8A4D509F9}|RSA\\Menu.csproj|l:\\n\u0103m 3\\k\u1EF3 5\\web\\atm_da\\rsa\\rsa\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2738EC94-6927-4BA9-883F-30C8A4D509F9}|RSA\\Menu.csproj|solutionrelative:rsa\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2738EC94-6927-4BA9-883F-30C8A4D509F9}|RSA\\RSA.csproj|L:\\N\u0103m 3\\K\u1EF3 5\\web\\ATM_DA\\RSA\\rsa\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2738EC94-6927-4BA9-883F-30C8A4D509F9}|RSA\\RSA.csproj|solutionrelative:rsa\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -22,24 +46,87 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Menu.Designer.cs",
+              "DocumentMoniker": "L:\\N\u0103m 3\\K\u1EF3 5\\web\\ATM_DA\\RSA\\RSA\\Menu.Designer.cs",
+              "RelativeDocumentMoniker": "RSA\\Menu.Designer.cs",
+              "ToolTip": "L:\\N\u0103m 3\\K\u1EF3 5\\web\\ATM_DA\\RSA\\RSA\\Menu.Designer.cs",
+              "RelativeToolTip": "RSA\\Menu.Designer.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAlwCkAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-21T07:25:46.807Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "PlayFair.cs",
+              "DocumentMoniker": "L:\\N\u0103m 3\\K\u1EF3 5\\web\\ATM_DA\\RSA\\RSA\\PlayFair.cs",
+              "RelativeDocumentMoniker": "RSA\\PlayFair.cs",
+              "ToolTip": "L:\\N\u0103m 3\\K\u1EF3 5\\web\\ATM_DA\\RSA\\RSA\\PlayFair.cs",
+              "RelativeToolTip": "RSA\\PlayFair.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAlwBgAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-21T07:24:42.414Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PlayFair.cs [Design]",
+              "DocumentMoniker": "L:\\N\u0103m 3\\K\u1EF3 5\\web\\ATM_DA\\RSA\\RSA\\PlayFair.cs",
+              "RelativeDocumentMoniker": "RSA\\PlayFair.cs",
+              "ToolTip": "L:\\N\u0103m 3\\K\u1EF3 5\\web\\ATM_DA\\RSA\\RSA\\PlayFair.cs [Design]",
+              "RelativeToolTip": "RSA\\PlayFair.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-21T07:23:02.218Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "L:\\N\u0103m 3\\K\u1EF3 5\\web\\ATM_DA\\RSA\\RSA\\Program.cs",
               "RelativeDocumentMoniker": "RSA\\Program.cs",
               "ToolTip": "L:\\N\u0103m 3\\K\u1EF3 5\\web\\ATM_DA\\RSA\\RSA\\Program.cs",
               "RelativeToolTip": "RSA\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAcwBIAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-21T01:14:05.986Z",
+              "WhenOpened": "2024-12-21T07:17:55.906Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Menu.cs",
+              "DocumentMoniker": "L:\\N\u0103m 3\\K\u1EF3 5\\web\\ATM_DA\\RSA\\RSA\\Menu.cs",
+              "RelativeDocumentMoniker": "RSA\\Menu.cs",
+              "ToolTip": "L:\\N\u0103m 3\\K\u1EF3 5\\web\\ATM_DA\\RSA\\RSA\\Menu.cs",
+              "RelativeToolTip": "RSA\\Menu.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAIA3wCEAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-21T07:15:16.075Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Menu.cs [Design]",
+              "DocumentMoniker": "L:\\N\u0103m 3\\K\u1EF3 5\\web\\ATM_DA\\RSA\\RSA\\Menu.cs",
+              "RelativeDocumentMoniker": "RSA\\Menu.cs",
+              "ToolTip": "L:\\N\u0103m 3\\K\u1EF3 5\\web\\ATM_DA\\RSA\\RSA\\Menu.cs [Design]",
+              "RelativeToolTip": "RSA\\Menu.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-21T07:15:13.352Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "RSA.cs [Design]",
               "DocumentMoniker": "L:\\N\u0103m 3\\K\u1EF3 5\\web\\ATM_DA\\RSA\\RSA\\RSA.cs",
               "RelativeDocumentMoniker": "RSA\\RSA.cs",
@@ -51,16 +138,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "RSA.cs",
               "DocumentMoniker": "L:\\N\u0103m 3\\K\u1EF3 5\\web\\ATM_DA\\RSA\\RSA\\RSA.cs",
               "RelativeDocumentMoniker": "RSA\\RSA.cs",
               "ToolTip": "L:\\N\u0103m 3\\K\u1EF3 5\\web\\ATM_DA\\RSA\\RSA\\RSA.cs",
               "RelativeToolTip": "RSA\\RSA.cs",
-              "ViewState": "AgIAAJAAAAAAAAAAAAAmwJ0AAAANAAAAAAAAAA==",
+              "ViewState": "AgIAANYAAAAAAAAAAAAiwOAAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-21T03:27:05.938Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "L:\\N\u0103m 3\\K\u1EF3 5\\web\\ATM_DA\\RSA\\RSA\\Program.cs",
+              "RelativeDocumentMoniker": "RSA\\Program.cs",
+              "ToolTip": "L:\\N\u0103m 3\\K\u1EF3 5\\web\\ATM_DA\\RSA\\RSA\\Program.cs",
+              "RelativeToolTip": "RSA\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-21T01:14:05.986Z"
             }
           ]
         }
