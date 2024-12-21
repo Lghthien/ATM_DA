@@ -1,0 +1,11 @@
+L:\Năm 3\Kỳ 5\web\ATM_DA\RSA\RSA\bin\Debug\RSA.exe.config
+L:\Năm 3\Kỳ 5\web\ATM_DA\RSA\RSA\bin\Debug\RSA.exe
+L:\Năm 3\Kỳ 5\web\ATM_DA\RSA\RSA\bin\Debug\RSA.pdb
+L:\Năm 3\Kỳ 5\web\ATM_DA\RSA\RSA\obj\Debug\Menu.csproj.AssemblyReference.cache
+L:\Năm 3\Kỳ 5\web\ATM_DA\RSA\RSA\obj\Debug\RSA.Menu.resources
+L:\Năm 3\Kỳ 5\web\ATM_DA\RSA\RSA\obj\Debug\RSA.Properties.Resources.resources
+L:\Năm 3\Kỳ 5\web\ATM_DA\RSA\RSA\obj\Debug\RSA.RSA.resources
+L:\Năm 3\Kỳ 5\web\ATM_DA\RSA\RSA\obj\Debug\Menu.csproj.GenerateResource.cache
+L:\Năm 3\Kỳ 5\web\ATM_DA\RSA\RSA\obj\Debug\Menu.csproj.CoreCompileInputs.cache
+L:\Năm 3\Kỳ 5\web\ATM_DA\RSA\RSA\obj\Debug\RSA.exe
+L:\Năm 3\Kỳ 5\web\ATM_DA\RSA\RSA\obj\Debug\RSA.pdb
