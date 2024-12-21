@@ -1,18 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\New folder\\ATM_DA\\RSA\\",
+  "WorkspaceRootPath": "L:\\N\u0103m 3\\K\u1EF3 5\\An to\u00E0n m\u1EA1ng\\ATM_DA\\RSA\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2738EC94-6927-4BA9-883F-30C8A4D509F9}|RSA\\Menu.csproj|D:\\New folder\\ATM_DA\\RSA\\rsa\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2738EC94-6927-4BA9-883F-30C8A4D509F9}|RSA\\Menu.csproj|solutionrelative:rsa\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2738EC94-6927-4BA9-883F-30C8A4D509F9}|RSA\\Menu.csproj|l:\\n\u0103m 3\\k\u1EF3 5\\an to\u00E0n m\u1EA1ng\\atm_da\\rsa\\rsa\\rsa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2738EC94-6927-4BA9-883F-30C8A4D509F9}|RSA\\Menu.csproj|solutionrelative:rsa\\rsa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2738EC94-6927-4BA9-883F-30C8A4D509F9}|RSA\\Menu.csproj|d:\\new folder\\atm_da\\rsa\\rsa\\playfair.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2738EC94-6927-4BA9-883F-30C8A4D509F9}|RSA\\Menu.csproj|solutionrelative:rsa\\playfair.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2738EC94-6927-4BA9-883F-30C8A4D509F9}|RSA\\Menu.csproj|D:\\New folder\\ATM_DA\\RSA\\rsa\\playfair.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{2738EC94-6927-4BA9-883F-30C8A4D509F9}|RSA\\Menu.csproj|solutionrelative:rsa\\playfair.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{2738EC94-6927-4BA9-883F-30C8A4D509F9}|RSA\\Menu.csproj|l:\\n\u0103m 3\\k\u1EF3 5\\an to\u00E0n m\u1EA1ng\\atm_da\\rsa\\rsa\\rsa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2738EC94-6927-4BA9-883F-30C8A4D509F9}|RSA\\Menu.csproj|solutionrelative:rsa\\rsa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,45 +18,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "PlayFair.cs [Design]",
-              "DocumentMoniker": "D:\\New folder\\ATM_DA\\RSA\\RSA\\PlayFair.cs",
-              "RelativeDocumentMoniker": "RSA\\PlayFair.cs",
-              "ToolTip": "D:\\New folder\\ATM_DA\\RSA\\RSA\\PlayFair.cs [Design]",
-              "RelativeToolTip": "RSA\\PlayFair.cs [Design]",
+              "DocumentIndex": 0,
+              "Title": "RSA.cs",
+              "DocumentMoniker": "L:\\N\u0103m 3\\K\u1EF3 5\\An to\u00E0n m\u1EA1ng\\ATM_DA\\RSA\\RSA\\RSA.cs",
+              "RelativeDocumentMoniker": "RSA\\RSA.cs",
+              "ToolTip": "L:\\N\u0103m 3\\K\u1EF3 5\\An to\u00E0n m\u1EA1ng\\ATM_DA\\RSA\\RSA\\RSA.cs",
+              "RelativeToolTip": "RSA\\RSA.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-21T07:23:02.218Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-12-21T23:14:15.501Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "PlayFair.cs",
-              "DocumentMoniker": "D:\\New folder\\ATM_DA\\RSA\\RSA\\PlayFair.cs",
-              "RelativeDocumentMoniker": "RSA\\PlayFair.cs",
-              "ToolTip": "D:\\New folder\\ATM_DA\\RSA\\RSA\\PlayFair.cs",
-              "RelativeToolTip": "RSA\\PlayFair.cs",
-              "ViewState": "AQIAAFoBAAAAAAAAAAAAwGMBAAASAAAA",
+              "Title": "RSA.cs [Design]",
+              "DocumentMoniker": "L:\\N\u0103m 3\\K\u1EF3 5\\An to\u00E0n m\u1EA1ng\\ATM_DA\\RSA\\RSA\\RSA.cs",
+              "RelativeDocumentMoniker": "RSA\\RSA.cs",
+              "ToolTip": "L:\\N\u0103m 3\\K\u1EF3 5\\An to\u00E0n m\u1EA1ng\\ATM_DA\\RSA\\RSA\\RSA.cs [Design]",
+              "RelativeToolTip": "RSA\\RSA.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-21T07:24:42.414Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\New folder\\ATM_DA\\RSA\\RSA\\Program.cs",
-              "RelativeDocumentMoniker": "RSA\\Program.cs",
-              "ToolTip": "D:\\New folder\\ATM_DA\\RSA\\RSA\\Program.cs",
-              "RelativeToolTip": "RSA\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-21T17:14:11.864Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-21T23:14:03.486Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }

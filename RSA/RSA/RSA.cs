@@ -82,8 +82,21 @@ namespace RSA
         {
             try
             {
-                string input = txtInput.Text;
+                // Lấy public key từ TextBox
+                string publicKeyText = txtPublicKey.Text;
+                if (string.IsNullOrWhiteSpace(publicKeyText))
+                {
+                    MessageBox.Show("Chưa có Public Key!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
 
+                // Tách n và e từ public key
+                string[] publicKeyParts = publicKeyText.Trim('(', ')').Split(',');
+                n = BigInteger.Parse(publicKeyParts[0].Trim());
+                publicExponent = BigInteger.Parse(publicKeyParts[1].Trim());
+
+                // Mã hóa từng ký tự
+                string input = txtInput.Text;
                 StringBuilder outputBuilder = new StringBuilder();
                 foreach (char c in input)
                 {
@@ -104,8 +117,21 @@ namespace RSA
         {
             try
             {
-                string input = txtInput.Text;
+                // Lấy private key từ TextBox
+                string privateKeyText = txtPrivateKey.Text;
+                if (string.IsNullOrWhiteSpace(privateKeyText))
+                {
+                    MessageBox.Show("Chưa có Private Key!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
 
+                // Tách n và d từ private key
+                string[] privateKeyParts = privateKeyText.Trim('(', ')').Split(',');
+                n = BigInteger.Parse(privateKeyParts[0].Trim());
+                d = BigInteger.Parse(privateKeyParts[1].Trim());
+
+                // Giải mã từng ký tự
+                string input = txtInput.Text;
                 StringBuilder outputBuilder = new StringBuilder();
                 foreach (char c in input)
                 {
@@ -121,6 +147,7 @@ namespace RSA
                 MessageBox.Show($"Lỗi: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
 
         private void btnUpload_Click(object sender, EventArgs e)
         {
