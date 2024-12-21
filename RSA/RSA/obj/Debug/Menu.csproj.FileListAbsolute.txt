@@ -10,3 +10,15 @@ L:\Năm 3\Kỳ 5\web\ATM_DA\RSA\RSA\obj\Debug\Menu.csproj.CoreCompileInputs.cach
 L:\Năm 3\Kỳ 5\web\ATM_DA\RSA\RSA\obj\Debug\RSA.exe
 L:\Năm 3\Kỳ 5\web\ATM_DA\RSA\RSA\obj\Debug\RSA.pdb
 L:\Năm 3\Kỳ 5\web\ATM_DA\RSA\RSA\obj\Debug\RSA.PlayFair.resources
+D:\New folder\ATM_DA\RSA\RSA\obj\Debug\Menu.csproj.AssemblyReference.cache
+D:\New folder\ATM_DA\RSA\RSA\obj\Debug\RSA.Menu.resources
+D:\New folder\ATM_DA\RSA\RSA\obj\Debug\RSA.PlayFair.resources
+D:\New folder\ATM_DA\RSA\RSA\obj\Debug\RSA.Properties.Resources.resources
+D:\New folder\ATM_DA\RSA\RSA\obj\Debug\RSA.RSA.resources
+D:\New folder\ATM_DA\RSA\RSA\obj\Debug\Menu.csproj.GenerateResource.cache
+D:\New folder\ATM_DA\RSA\RSA\obj\Debug\Menu.csproj.CoreCompileInputs.cache
+D:\New folder\ATM_DA\RSA\RSA\obj\Debug\RSA.exe
+D:\New folder\ATM_DA\RSA\RSA\obj\Debug\RSA.pdb
+D:\New folder\ATM_DA\RSA\RSA\bin\Debug\RSA.exe.config
+D:\New folder\ATM_DA\RSA\RSA\bin\Debug\RSA.exe
+D:\New folder\ATM_DA\RSA\RSA\bin\Debug\RSA.pdb
