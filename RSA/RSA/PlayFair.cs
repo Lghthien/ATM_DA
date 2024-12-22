@@ -7,7 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-//using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace RSA
 {
@@ -17,7 +16,7 @@ namespace RSA
         int counter, i, z = 0;
         string key;
         string text = "";
-        int width = 5, hight = 5;
+        int width, hight;
         char[,] tempList;
         System.Windows.Forms.Timer timer = new System.Windows.Forms.Timer();
         System.Windows.Forms.Timer timer2 = new System.Windows.Forms.Timer();
@@ -38,6 +37,9 @@ namespace RSA
             this.Close();
         }
 
+        private List<Button> currentButtons = new List<Button>();
+
+
         async void Wait(int n)
         {
             await System.Threading.Tasks.Task.Delay(TimeSpan.FromSeconds(n));
@@ -49,7 +51,10 @@ namespace RSA
             foreach (var t in text)
             {
                 if (t == ' ') continue;
-                else if (t == 'J') textList.Add('I');
+                else
+                if (width == 5) {
+                    if (t == 'J') textList.Add('I'); 
+                }
                 textList.Add(t);
             }
         }
@@ -79,9 +84,18 @@ namespace RSA
             List<char> tempList = new List<char>();
             for (char i = 'A'; i <= 'Z'; i++)
             {
-                if (i == 'J') continue;
+                if (i == 'J' && width == 5) continue;
                 tempList.Add(i);
             }
+
+            if (hight == 6)
+            {
+                for (char c = '0'; c <= '9'; c++)
+                {
+                    tempList.Add(c);
+                }
+            }
+
             return tempList;
         }
         List<char> CreateTable(string key)
@@ -108,7 +122,6 @@ namespace RSA
             }
             return tempList;
         }
-
         void ResetData()
         {
             timer = new System.Windows.Forms.Timer();
@@ -117,7 +130,7 @@ namespace RSA
             tempList = new char[width, hight];
             counter = i = 0;
             key = "";
-            plainxLable.Text = "PlainX : ";
+            Inputprocessing.Text = "";
             tempList = new char[width, hight];
         }
 
@@ -147,13 +160,9 @@ namespace RSA
 
         private void PlayFair_Load(object sender, EventArgs e)
         {
+            var btn = currentButtons.ToArray();
 
-            Button[] btn = {button1,button2,button3,button4,button5,
-button6,button7,button8,button9,button10,
-button11,button12,button13,button14,button15,
-button16,button17,button18,button19,button20,
-button21,button22,button23,button24,button25,};
-            for (int i = 0; i < 25; i++)
+            for (int i = 0; i < width * hight; i++)
             {
                 btn[i].Text = "";
                 btn[i].BackColor = Color.Gainsboro;
@@ -163,13 +172,38 @@ button21,button22,button23,button24,button25,};
 
         private void matrix5x5_CheckedChanged(object sender, EventArgs e)
         {
+            width = 5;
+            hight = 5;
 
+            currentButtons = new List<Button>
+            {
+                button1,button2,button3,button4,button5,
+                button6,button7,button8,button9,button10,
+                button11,button12,button13,button14,button15,
+                button16,button17,button18,button19,button20,
+                button21,button22,button23,button24,button25,
+                button26, button27, button28, button29, button30,
+                button31, button32, button33, button34, button35, button36
+            };
         }
 
         private void matrix6x6_CheckedChanged(object sender, EventArgs e)
         {
+            width = 6;
+            hight = 6;
 
+            currentButtons = new List<Button>
+            {
+                button1,button2,button3,button4,button5, button31,
+                button6,button7,button8,button9,button10,button32,
+                button11,button12,button13,button14,button15, button33,
+                button16,button17,button18,button19,button20,  button34,
+                button21,button22,button23,button24,button25,button35,
+                button26, button27, button28, button29, button30,
+                button36
+            };
         }
+
 
         private void decBtn_Click(object sender, EventArgs e)
         {
@@ -187,7 +221,6 @@ button21,button22,button23,button24,button25,};
             {
                 plainX += item;
             }
-            //plainxLable.Text += plainX;
 
             timer.Interval = (1 * 300);
             timer.Tick += new EventHandler(Timer_Tick2);
@@ -200,12 +233,9 @@ button21,button22,button23,button24,button25,};
             label4.Text = "Create Table Process...";
             outputContent.Text = "";
 
-            Button[] btn = {button1,button2,button3,button4,button5,
-            button6,button7,button8,button9,button10,
-            button11,button12,button13,button14,button15,
-            button16,button17,button18,button19,button20,
-            button21,button22,button23,button24,button25,};
-            if (counter >= 25)
+            var btn = currentButtons.ToArray();
+
+            if (counter >=  (width * hight))
             {
                 timer.Stop();
                 timer.Enabled = false;
@@ -227,12 +257,9 @@ button21,button22,button23,button24,button25,};
 
         void ResetButtonColor()
         {
-            Button[] btn = {button1,button2,button3,button4,button5,
-            button6,button7,button8,button9,button10,
-            button11,button12,button13,button14,button15,
-            button16,button17,button18,button19,button20,
-            button21,button22,button23,button24,button25,};
-            for (int q = 0; q < 25; q++)
+            var btn = currentButtons.ToArray();
+
+            for (int q = 0; q < width * hight; q++)
             {
                 btn[q].BackColor = Color.Gainsboro;
 
@@ -252,13 +279,7 @@ button21,button22,button23,button24,button25,};
                 label4.Text = "Encryption Finished!";
                 return;
             }
-
-
-            Button[] btn = {button1,button2,button3,button4,button5,
-            button6,button7,button8,button9,button10,
-            button11,button12,button13,button14,button15,
-            button16,button17,button18,button19,button20,
-            button21,button22,button23,button24,button25,};
+            var btn = currentButtons.ToArray();
 
             ResetButtonColor();
             char Ch1 = CreatePlainText()[i]; //kí tự đầu
@@ -296,64 +317,8 @@ button21,button22,button23,button24,button25,};
                 }
             }
 
-
-
             int n = width;
-            //kiểm tra xem ký tự đầu tiên và ký tự thứ hai có cùng hàng không
-            /*   if (row1 == row2)
-               {
-                   if (btn[btnIndex[0]].Text == btn[(row1 * n) + (col1 + 1) % hight].Text ||
-                       btn[btnIndex[1]].Text == btn[(row1 * n) + (col1 + 1) % hight].Text
-                       )
-                   {
-                       btn[(row1 * n) + (col1 + 1) % hight].BackColor = Color.Yellow;
-                   }
-                   else
-                       btn[(row1 * n) + (col1 + 1) % hight].BackColor = Color.Blue;
-
-                   if (btn[btnIndex[0]].Text == btn[(row2 * n) + (col2 + 1) % hight].Text ||
-       btn[btnIndex[1]].Text == btn[(row2 * n) + (col2 + 1) % hight].Text
-       )
-                   {
-                       btn[(row1 * n) + (col1 + 1) % hight].BackColor = Color.Yellow;
-                   }
-                   else
-                       btn[(row2 * n) + (col2 + 1) % hight].BackColor = Color.Blue;
-                   text += (tempList[row1, (col1 + 1) % hight] + "" + tempList[row2, (col2 + 1) % hight]);
-               }
-               //kiểm tra xem ký tự đầu tiên và ký tự thứ hai có nằm trên cùng một cột không
-               else if (col1 == col2)
-               {
-                   if (btn[btnIndex[0]].Text == btn[(((row2 + 1) % hight) * n) + col2].Text ||
-       btn[btnIndex[1]].Text == btn[(((row2 + 1) % hight) * n) + col2].Text
-       )
-                   {
-                       btn[(((row2 + 1) % hight) * n) + col2].BackColor = Color.Yellow;
-                   }
-                   else
-                       btn[(((row2 + 1) % hight) * n) + col2].BackColor = Color.Blue;
-
-                   if (btn[btnIndex[0]].Text == btn[(((row2 + 1) % hight) * n) + col1].Text ||
-       btn[btnIndex[1]].Text == btn[(((row2 + 1) % hight) * n) + col1].Text
-       )
-                   {
-                       btn[(((row2 + 1) % hight) * n) + col1].BackColor = Color.Yellow;
-                   }
-                   else
-                       btn[(((row2 + 1) % hight) * n) + col1].BackColor = Color.Blue;
-
-
-
-                   text += (tempList[(row1 + 1) % hight, col1] + "" + tempList[(row2 + 1) % hight, col2]);
-               }
-               else
-               {
-                   btn[(row1 * n) + col2].BackColor = Color.Blue;
-                   btn[(row2 * n) + col1].BackColor = Color.Blue;
-                   text += (tempList[row1, col2] + "" + tempList[row2, col1]);
-                   //  Console.Write(tempList[row2, col1] + "" + tempList[row1, col2]); //another slove
-
-               }*/
+            
             if (row1 == row2)
             {
                 // Xử lý cùng hàng
@@ -377,7 +342,7 @@ button21,button22,button23,button24,button25,};
             }
 
             outputContent.Text = text;
-            plainxLable.Text += Ch1 + "" + Ch2;
+            Inputprocessing.Text += Ch1 + "" + Ch2;
             i += 2;
             timer2.Enabled = true;
 
@@ -389,12 +354,8 @@ button21,button22,button23,button24,button25,};
             label4.Text = "Create Table Process...";
             outputContent.Text = "";
 
-            Button[] btn = {button1,button2,button3,button4,button5,
-            button6,button7,button8,button9,button10,
-            button11,button12,button13,button14,button15,
-            button16,button17,button18,button19,button20,
-            button21,button22,button23,button24,button25,};
-            if (counter >= 25)
+            var btn = currentButtons.ToArray();
+            if (counter >= width*hight)
             {
                 timer.Stop();
                 timer.Enabled = false;
@@ -426,13 +387,7 @@ button21,button22,button23,button24,button25,};
                 label4.Text = "Decryption Finished!";
                 return;
             }
-
-
-            Button[] btn = {button1,button2,button3,button4,button5,
-            button6,button7,button8,button9,button10,
-            button11,button12,button13,button14,button15,
-            button16,button17,button18,button19,button20,
-            button21,button22,button23,button24,button25,};
+            var btn = currentButtons.ToArray();
 
             ResetButtonColor();
             char Ch1 = CreatePlainText()[i]; //kí tự đầu
@@ -469,64 +424,7 @@ button21,button22,button23,button24,button25,};
                 }
             }
 
-
-
             int n = width;
-            //kiểm tra xem ký tự đầu tiên và ký tự thứ hai có cùng hàng không
-            //        if (row1 == row2)
-            //        {
-            //            if (btn[btnIndex[0]].Text == btn[(row1 * n) + (col1 + 1) % hight].Text ||
-            //                btn[btnIndex[1]].Text == btn[(row1 * n) + (col1 + 1) % hight].Text
-            //                )
-            //            {
-            //                btn[(row1 * n) + (col1 + 1) % hight].BackColor = Color.Yellow;
-            //            }
-            //            else
-            //                btn[(row1 * n) + (col1 + 1) % hight].BackColor = Color.Blue;
-
-            //            if (btn[btnIndex[0]].Text == btn[(row2 * n) + (col2 + 1) % hight].Text ||
-            //btn[btnIndex[1]].Text == btn[(row2 * n) + (col2 + 1) % hight].Text
-            //)
-            //            {
-            //                btn[(row1 * n) + (col1 + 1) % hight].BackColor = Color.Yellow;
-            //            }
-            //            else
-            //                btn[(row2 * n) + (col2 + 1) % hight].BackColor = Color.Blue;
-            //            text += (tempList[row1, (col1 + 1) % hight] + "" + tempList[row2, (col2 + 1) % hight]);
-            //        }
-            //        //kiểm tra xem ký tự đầu tiên và ký tự thứ hai có nằm trên cùng một cột không
-            //        else if (col1 == col2)
-            //        {
-            //            if (btn[btnIndex[0]].Text == btn[(((row2 + 1) % hight) * n) + col2].Text ||
-            //btn[btnIndex[1]].Text == btn[(((row2 + 1) % hight) * n) + col2].Text
-            //)
-            //            {
-            //                btn[(((row2 + 1) % hight) * n) + col2].BackColor = Color.Yellow;
-            //            }
-            //            else
-            //                btn[(((row2 + 1) % hight) * n) + col2].BackColor = Color.Blue;
-
-            //            if (btn[btnIndex[0]].Text == btn[(((row2 + 1) % hight) * n) + col1].Text ||
-            //btn[btnIndex[1]].Text == btn[(((row2 + 1) % hight) * n) + col1].Text
-            //)
-            //            {
-            //                btn[(((row2 + 1) % hight) * n) + col1].BackColor = Color.Yellow;
-            //            }
-            //            else
-            //                btn[(((row2 + 1) % hight) * n) + col1].BackColor = Color.Blue;
-
-
-
-            //            text += (tempList[(row1 + 1) % hight, col1] + "" + tempList[(row2 + 1) % hight, col2]);
-            //        }
-            //        else
-            //        {
-            //            btn[(row1 * n) + col2].BackColor = Color.Blue;
-            //            btn[(row2 * n) + col1].BackColor = Color.Blue;
-            //            text += (tempList[row1, col2] + "" + tempList[row2, col1]);
-            //            //  Console.Write(tempList[row2, col1] + "" + tempList[row1, col2]); //another slove
-
-            //        }
 
             if (row1 == row2) // Cùng hàng
             {
@@ -587,7 +485,7 @@ button21,button22,button23,button24,button25,};
             }
 
             outputContent.Text = text;
-            plainxLable.Text += Ch1 + "" + Ch2;
+            Inputprocessing.Text += Ch1 + "" + Ch2;
             i += 2;
             timer3.Enabled = true;
 
