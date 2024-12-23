@@ -63,9 +63,9 @@ namespace RSA
         {
             List<char> tempList = new List<char>();
 
-            for (int i = 0; i < textList.Count - 1; i++) //so sánh hai ký tự và thêm X nếu giống nhau
+            for (int i = 0; i < textList.Count - 1; i ++) //so sánh hai ký tự và thêm X nếu giống nhau
             {
-                if (textList[i] == textList[i + 1])
+                if (textList[i] == textList[i + 1] && i % 2 == 0)
                 {
                     tempList.Add(textList[i]);
                     tempList.Add('X');
@@ -125,14 +125,33 @@ namespace RSA
         }
         void ResetData()
         {
+            timer.Stop();
+            timer2.Stop();
+            timer3.Stop();
+
             timer = new System.Windows.Forms.Timer();
             timer2 = new System.Windows.Forms.Timer();
             timer3 = new System.Windows.Forms.Timer();
             tempList = new char[width, hight];
-            counter = i = 0;
+            textList.Clear();
+
+            foreach (var btn in currentButtons)
+            {
+                btn.Text = "";
+                btn.BackColor = Color.LightSeaGreen;
+            }
+
+            counter = 0;
+            i = 0;
+            z = 0;
             key = "";
             Inputprocessing.Text = "";
             tempList = new char[width, hight];
+
+            text = "";
+
+            outputContent.Text = "";
+
         }
 
         private void encBtn_Click(object sender, EventArgs e)
@@ -166,13 +185,16 @@ namespace RSA
             for (int i = 0; i < width * hight; i++)
             {
                 btn[i].Text = "";
-                btn[i].BackColor = Color.Gainsboro;
+                btn[i].BackColor = Color.DarkCyan;
 
             }
         }
 
         private void matrix5x5_CheckedChanged(object sender, EventArgs e)
         {
+
+            ResetData();
+
             width = 5;
             hight = 5;
 
@@ -190,6 +212,8 @@ namespace RSA
 
         private void matrix6x6_CheckedChanged(object sender, EventArgs e)
         {
+            ResetData();
+
             width = 6;
             hight = 6;
 
@@ -262,7 +286,7 @@ namespace RSA
 
             for (int q = 0; q < width * hight; q++)
             {
-                btn[q].BackColor = Color.Gainsboro;
+                btn[q].BackColor = Color.DarkCyan;
 
             }
         }

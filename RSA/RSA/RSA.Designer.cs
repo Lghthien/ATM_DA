@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             System.Windows.Forms.Label label3;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RSA));
             this.txtP = new System.Windows.Forms.TextBox();
             this.txtOutput = new System.Windows.Forms.TextBox();
             this.txtInput = new System.Windows.Forms.TextBox();
@@ -56,6 +57,7 @@
             // label3
             // 
             label3.AutoSize = true;
+            label3.BackColor = System.Drawing.Color.Transparent;
             label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             label3.ForeColor = System.Drawing.Color.DarkRed;
             label3.Location = new System.Drawing.Point(23, 301);
@@ -135,6 +137,7 @@
             // labelP
             // 
             this.labelP.AutoSize = true;
+            this.labelP.BackColor = System.Drawing.Color.Transparent;
             this.labelP.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelP.ForeColor = System.Drawing.Color.Maroon;
             this.labelP.Location = new System.Drawing.Point(137, 132);
@@ -146,6 +149,7 @@
             // labelQ
             // 
             this.labelQ.AutoSize = true;
+            this.labelQ.BackColor = System.Drawing.Color.Transparent;
             this.labelQ.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelQ.ForeColor = System.Drawing.Color.Maroon;
             this.labelQ.Location = new System.Drawing.Point(137, 185);
@@ -157,6 +161,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Maroon;
             this.label1.Location = new System.Drawing.Point(629, 79);
@@ -168,6 +173,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Maroon;
             this.label2.Location = new System.Drawing.Point(630, 198);
@@ -250,6 +256,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.DarkRed;
             this.label4.Location = new System.Drawing.Point(437, 301);
@@ -261,6 +268,7 @@
             // labelE
             // 
             this.labelE.AutoSize = true;
+            this.labelE.BackColor = System.Drawing.Color.Transparent;
             this.labelE.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelE.ForeColor = System.Drawing.Color.Maroon;
             this.labelE.Location = new System.Drawing.Point(137, 240);
@@ -304,6 +312,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.label5.Location = new System.Drawing.Point(351, 11);
@@ -332,6 +341,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(889, 692);
             this.Controls.Add(this.BackMenu);
             this.Controls.Add(this.label5);
@@ -355,6 +366,7 @@
             this.Controls.Add(this.txtInput);
             this.Controls.Add(this.txtOutput);
             this.Controls.Add(this.txtP);
+            this.DoubleBuffered = true;
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "RSA";
             this.Text = "RSA";
