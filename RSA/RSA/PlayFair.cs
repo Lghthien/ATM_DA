@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -263,6 +264,84 @@ namespace RSA
             {
                 btn[q].BackColor = Color.Gainsboro;
 
+            }
+        }
+
+        private void UploadBtn_Click(object sender, EventArgs e)
+        {
+
+            try
+            {
+                OpenFileDialog openFileDialog = new OpenFileDialog
+                {
+                    Filter = "All Files (*.*)|*.*", // Cho phép tất cả các loại tệp
+                    Title = "Chọn tệp bất kỳ"
+                };
+
+                if (openFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    string filePath = openFileDialog.FileName;
+
+                    // Đọc tệp và hiển thị nội dung nếu có thể
+                    if (Path.GetExtension(filePath).Equals(".txt", StringComparison.OrdinalIgnoreCase))
+                    {
+                        string fileContent = File.ReadAllText(filePath, Encoding.UTF8);
+                        inputContent.Text = fileContent;
+                    }
+                    else
+                    {
+                        inputContent.Text = $"Không thể hiển thị nội dung của tệp: {Path.GetFileName(filePath)}";
+                        MessageBox.Show("Tệp được chọn không phải là tệp văn bản. Chỉ có thể đọc được các tệp .txt.",
+                                        "Thông báo",
+                                        MessageBoxButtons.OK,
+                                        MessageBoxIcon.Information);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Lỗi khi tải tệp: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void DownloadBtn_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                // Sử dụng FolderBrowserDialog để chọn thư mục
+                using (FolderBrowserDialog folderBrowserDialog = new FolderBrowserDialog())
+                {
+                    folderBrowserDialog.Description = "Chọn thư mục để lưu tệp";
+                    if (folderBrowserDialog.ShowDialog() == DialogResult.OK)
+                    {
+                        string selectedPath = folderBrowserDialog.SelectedPath;
+
+                        // Yêu cầu người dùng nhập tên tệp
+                        string fileName = Microsoft.VisualBasic.Interaction.InputBox(
+                            "Nhập tên tệp (không cần thêm đuôi .txt):",
+                            "Lưu tệp",
+                            "output"
+                        );
+
+                        if (!string.IsNullOrWhiteSpace(fileName))
+                        {
+                            string fullPath = Path.Combine(selectedPath, fileName + ".txt");
+
+                            // Lưu nội dung từ txtOutput vào tệp
+                            File.WriteAllText(fullPath, outputContent.Text, Encoding.UTF8);
+
+                            MessageBox.Show($"Đã lưu tệp thành công tại: {fullPath}", "Thành công", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
+                        else
+                        {
+                            MessageBox.Show("Tên tệp không hợp lệ. Hãy thử lại!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Lỗi khi lưu tệp: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
